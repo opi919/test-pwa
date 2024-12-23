@@ -40,6 +40,6 @@ const manifestForPlugIn ={
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/",
   plugins: [react(), VitePWA(manifestForPlugIn)],
 })

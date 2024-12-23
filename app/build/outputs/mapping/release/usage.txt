@@ -20,6 +20,7 @@ android.support.customtabs.ICustomTabsService$Stub$Proxy:
     public boolean requestPostMessageChannel(android.support.customtabs.ICustomTabsCallback,android.net.Uri)
     public boolean requestPostMessageChannelWithExtras(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle)
     public boolean updateVisuals(android.support.customtabs.ICustomTabsCallback,android.os.Bundle)
+    public boolean validateRelationship(android.support.customtabs.ICustomTabsCallback,int,android.net.Uri,android.os.Bundle)
 android.support.customtabs.ICustomTabsService$Stub:
     private static final java.lang.String DESCRIPTOR
     static final int TRANSACTION_extraCommand
@@ -44,6 +45,7 @@ android.support.customtabs.ICustomTabsService:
     public abstract boolean requestPostMessageChannel(android.support.customtabs.ICustomTabsCallback,android.net.Uri)
     public abstract boolean requestPostMessageChannelWithExtras(android.support.customtabs.ICustomTabsCallback,android.net.Uri,android.os.Bundle)
     public abstract boolean updateVisuals(android.support.customtabs.ICustomTabsCallback,android.os.Bundle)
+    public abstract boolean validateRelationship(android.support.customtabs.ICustomTabsCallback,int,android.net.Uri,android.os.Bundle)
 android.support.customtabs.IPostMessageService$Default
 android.support.customtabs.IPostMessageService$Stub$Proxy
 android.support.customtabs.IPostMessageService$Stub
@@ -197,11 +199,13 @@ androidx.browser.customtabs.CustomTabsClient$1
 androidx.browser.customtabs.CustomTabsClient:
     private static final java.lang.String TAG
     public androidx.browser.customtabs.CustomTabsSession attachSession(androidx.browser.customtabs.CustomTabsSession$PendingSession)
+    public static boolean bindCustomTabsService(android.content.Context,java.lang.String,androidx.browser.customtabs.CustomTabsServiceConnection)
     public static boolean connectAndInitialize(android.content.Context,java.lang.String)
     public android.os.Bundle extraCommand(java.lang.String,android.os.Bundle)
     public static java.lang.String getPackageName(android.content.Context,java.util.List)
     public static java.lang.String getPackageName(android.content.Context,java.util.List,boolean)
     public static androidx.browser.customtabs.CustomTabsSession$PendingSession newPendingSession(android.content.Context,androidx.browser.customtabs.CustomTabsCallback,int)
+    public androidx.browser.customtabs.CustomTabsSession newSession(androidx.browser.customtabs.CustomTabsCallback)
 androidx.browser.customtabs.CustomTabsIntent$Builder:
     public void <init>(androidx.browser.customtabs.CustomTabsSession)
     public androidx.browser.customtabs.CustomTabsIntent$Builder addDefaultShareMenuItem()
@@ -287,6 +291,7 @@ androidx.browser.customtabs.CustomTabsSession:
     public boolean setActionButton(android.graphics.Bitmap,java.lang.String)
     public boolean setSecondaryToolbarViews(android.widget.RemoteViews,int[],android.app.PendingIntent)
     public boolean setToolbarItem(int,android.graphics.Bitmap,java.lang.String)
+    public boolean validateRelationship(int,android.net.Uri,android.os.Bundle)
 androidx.browser.customtabs.CustomTabsSessionToken$1
 androidx.browser.customtabs.CustomTabsSessionToken$MockCallback
 androidx.browser.customtabs.CustomTabsSessionToken
@@ -1234,16 +1239,7 @@ com.google.androidbrowserhelper.R$drawable:
 com.google.androidbrowserhelper.R$id
 com.google.androidbrowserhelper.R$integer
 com.google.androidbrowserhelper.R$layout
-com.google.androidbrowserhelper.R$string:
-    public static int app_name
-    public static int copy_toast_msg
-    public static int fallback_menu_item_copy_link
-    public static int fallback_menu_item_open_in_browser
-    public static int fallback_menu_item_share_link
-    public static int no_provider_toast
-    public static int status_bar_notification_info_overflow
-    public static int update_chrome_toast
-    private void <init>()
+com.google.androidbrowserhelper.R$string
 com.google.androidbrowserhelper.R$style
 com.google.androidbrowserhelper.R$styleable
 com.google.androidbrowserhelper.R$xml
@@ -1260,6 +1256,7 @@ com.google.androidbrowserhelper.trusted.ChromeLegacyUtils:
     private static final int VERSION_SUPPORTS_SIMPLIFIED_MANAGE_DATA
     static final int VERSION_SUPPORTS_TRUSTED_WEB_ACTIVITIES
     private void <init>()
+    public static boolean supportsManageSpaceWithoutWarmupAndValidation(android.content.pm.PackageManager,java.lang.String)
 com.google.androidbrowserhelper.trusted.ChromeOsSupport:
     public static final java.lang.String ARC_FEATURE
     public static final java.lang.String ARC_PAYMENT_APP
@@ -1295,6 +1292,10 @@ com.google.androidbrowserhelper.trusted.LauncherActivityMetadata:
     private static final java.lang.String METADATA_STATUS_BAR_COLOR_DARK_ID
     private static final java.lang.String METADATA_STATUS_BAR_COLOR_ID
     private static final java.lang.String TAG
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$1
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$Connection
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection$1
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity$LegacyChromeConnection
 com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity:
     public static final java.lang.String ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA
     public static final java.lang.String CATEGORY_LAUNCH_SITE_SETTINGS
@@ -1302,6 +1303,20 @@ com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity:
     public static final java.lang.String OVERRIDE_IC_SITE_SETTINGS_ID
     public static final java.lang.String SITE_SETTINGS_SHORTCUT_ID
     private static final java.lang.String TAG
+    private androidx.browser.customtabs.CustomTabsServiceConnection mConnection
+    private java.lang.String mProviderPackage
+    public void <init>()
+    static synthetic void access$200(com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity,androidx.browser.customtabs.CustomTabsSession)
+    protected android.view.View createLoadingView()
+    protected android.net.Uri getDefaultUrlForManagingSpace()
+    protected void handleNoSupportForManageSpace()
+    protected void handleTwaNeverLaunched()
+    private static boolean launchBrowserSiteSettings(android.app.Activity,androidx.browser.customtabs.CustomTabsSession,java.lang.String,android.net.Uri)
+    private void launchSettings(androidx.browser.customtabs.CustomTabsSession)
+    protected void onCreate(android.os.Bundle)
+    protected void onError(java.lang.RuntimeException)
+    protected void onStop()
+    private boolean supportsTrustedWebActivities(java.lang.String)
 com.google.androidbrowserhelper.trusted.NotificationDelegationExtraCommandHandler:
     static final java.lang.String COMMAND_CHECK_NOTIFICATION_PERMISSION
     private static final java.lang.String COMMAND_GET_NOTIFICATION_PERMISSION_REQUEST_PENDING_INTENT
@@ -1345,6 +1360,7 @@ com.google.androidbrowserhelper.trusted.TwaProviderPicker:
 com.google.androidbrowserhelper.trusted.TwaSharedPreferencesManager:
     private static final java.lang.String KEY_PROVIDER_PACKAGE
     private static final java.lang.String PREFS_NAME
+    public java.lang.String readLastLaunchedProviderPackageName()
 com.google.androidbrowserhelper.trusted.Utils:
     public void <init>()
 com.google.androidbrowserhelper.trusted.WebViewFallbackActivity:

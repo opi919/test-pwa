@@ -12,7 +12,7 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#F0E7DB",
   "enableNotifications": true,
-  "startUrl": "https://test-pwa-ivory-ten.vercel.app/",
+  "startUrl": "/",
   "iconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
   "maskableIconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
   "splashScreenFadeOutDuration": 300,
@@ -20,8 +20,8 @@
     "path": "my-release-key.jks",
     "alias": "my-key-alias"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "3",
+  "appVersionCode": 3,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://test-pwa-ivory-ten.vercel.app/manifest.webmanifest",
@@ -30,7 +30,7 @@
   "alphaDependencies": {
     "enabled": false
   },
-  "enableSiteSettingsShortcut": true,
+  "enableSiteSettingsShortcut": false,
   "isChromeOSOnly": false,
   "isMetaQuest": false,
   "fullScopeUrl": "https://test-pwa-ivory-ten.vercel.app/",
@@ -39,5 +39,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "1"
+  "appVersion": "3"
 }

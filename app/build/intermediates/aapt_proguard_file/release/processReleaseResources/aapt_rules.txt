@@ -4,7 +4,6 @@
 -keep class app.vercel.test_pwa_ivory_ten.twa.DelegationService { <init>(); }
 -keep class app.vercel.test_pwa_ivory_ten.twa.LauncherActivity { <init>(); }
 -keep class com.google.androidbrowserhelper.trusted.FocusActivity { <init>(); }
--keep class com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity { <init>(); }
 -keep class com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity { <init>(); }
 -keep class com.google.androidbrowserhelper.trusted.WebViewFallbackActivity { <init>(); }
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="enableNotification">true</bool>
-    <bool name="enableSiteSettingsShortcut">true</bool>
+    <bool name="enableSiteSettingsShortcut">false</bool>
     <color name="backgroundColor">#F0E7DB</color>
     <color name="colorPrimary">#171717</color>
     <color name="colorPrimaryDark">#000000</color>
@@ -26,7 +26,7 @@
     <string name="fullScopeUrl" translatable="false">https://test-pwa-ivory-ten.vercel.app/</string>
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <string name="hostName" translatable="false">test-pwa-ivory-ten.vercel.app</string>
-    <string name="launchUrl" translatable="false">https://test-pwa-ivory-ten.vercel.apphttps://test-pwa-ivory-ten.vercel.app/</string>
+    <string name="launchUrl" translatable="false">https://test-pwa-ivory-ten.vercel.app/</string>
     <string name="launcherName" translatable="false">MYPWA</string>
     <string name="orientation" translatable="false">default</string>
     <string name="providerAuthority" translatable="false">app.vercel.test_pwa_ivory_ten.twa.fileprovider</string>

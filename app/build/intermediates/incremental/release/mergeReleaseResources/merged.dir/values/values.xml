@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="enableNotification">true</bool>
-    <bool name="enableSiteSettingsShortcut">true</bool>
+    <bool name="enableSiteSettingsShortcut">false</bool>
     <color name="backgroundColor">#F0E7DB</color>
     <color name="browser_actions_bg_grey">#F5F5F5</color>
     <color name="browser_actions_divider_color">#1E000000</color>
@@ -112,7 +112,7 @@
     <string name="fullScopeUrl" translatable="false">https://test-pwa-ivory-ten.vercel.app/</string>
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <string name="hostName" translatable="false">test-pwa-ivory-ten.vercel.app</string>
-    <string name="launchUrl" translatable="false">https://test-pwa-ivory-ten.vercel.apphttps://test-pwa-ivory-ten.vercel.app/</string>
+    <string name="launchUrl" translatable="false">https://test-pwa-ivory-ten.vercel.app/</string>
     <string name="launcherName" translatable="false">MYPWA</string>
     <string name="manage_space_no_data_toast">This app holds no browsing data.</string>
     <string name="manage_space_not_supported_toast">This app\'s data is stored in %1$s.</string>

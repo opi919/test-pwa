@@ -1,4 +1,4 @@
-#Mon Dec 23 22:45:16 BDT 2024
+#Mon Dec 23 23:02:13 BDT 2024
 base.0=D\:\\Documents\\react\\test-pwa\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -23,8 +23,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.vercel.test_pwa_ivory_ten.twa"
-    android:versionCode="1"
-    android:versionName="1" >
+    android:versionCode="3"
+    android:versionName="3" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -49,7 +49,6 @@
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
-        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         <meta-data
@@ -62,11 +61,6 @@
             android:name="twa_generator"
             android:value="@string/generatorApp" />
 
-        <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" >
-            <meta-data
-                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
-                android:value="@string/launchUrl" />
-        </activity>
         <activity
             android:name="app.vercel.test_pwa_ivory_ten.twa.LauncherActivity"
             android:alwaysRetainTaskState="true"

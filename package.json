@@ -1,5 +1,6 @@
 {
   "name": "test-pwa",
+  "homepage": "https://test-pwa-ivory-ten.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

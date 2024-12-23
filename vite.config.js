@@ -6,8 +6,8 @@ const manifestForPlugIn ={
   registerType: "prompt",
   includeAssests: ["favicon.ico", "apple-touch-icon-180x180.png", "logo.svg"],
   manifest: {
-    name: "Uplift",
-    short_name: "Uplift",
+    name: "MYPWA",
+    short_name: "MYPWA",
     description: "A Fundraising Platform for Nonprofits",
     icons: [
       {

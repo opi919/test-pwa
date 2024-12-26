@@ -23,8 +23,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.vercel.test_pwa_ivory_ten.twa"
-    android:versionCode="4"
-    android:versionName="4" >
+    android:versionCode="5"
+    android:versionName="5" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -105,9 +105,6 @@
             <meta-data
                 android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
                 android:value="@string/fallbackType" />
-            <meta-data
-                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
-                android:value="immersive" />
             <meta-data
                 android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
                 android:value="@string/orientation" />

@@ -12,7 +12,6 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#F0E7DB",
   "enableNotifications": true,
-  "fallbackType": "none",
   "startUrl": "/",
   "iconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
   "maskableIconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
@@ -21,11 +20,12 @@
     "path": "my-release-key.jks",
     "alias": "my-key-alias"
   },
-  "appVersionName": "4",
-  "appVersionCode": 4,
+  "appVersionName": "5",
+  "appVersionCode": 5,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://test-pwa-ivory-ten.vercel.app/manifest.webmanifest",
+  "fallbackType": "none",
   "features": {
     "enableUrlBarHiding": true
   },
@@ -41,5 +41,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "4"
+  "appVersion": "5"
 }

@@ -23,8 +23,8 @@
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 25    package="app.vercel.test_pwa_ivory_ten.twa"
-26    android:versionCode="4"
-27    android:versionName="4" >
+26    android:versionCode="5"
+27    android:versionName="5" >
 28
 29    <uses-sdk
 30        android:minSdkVersion="21"
@@ -39,21 +39,21 @@
 36        <intent>
 36-->[com.google.androidbrowserhelper:androidbrowserhelper:2.5.0] C:\Users\khand\.gradle\caches\8.8\transforms\d3335fbdff4200978ad121d7b141def7\transformed\androidbrowserhelper-2.5.0\AndroidManifest.xml:27:9-33:18
 37            <action android:name="android.intent.action.VIEW" />
-37-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:17-68
-37-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:25-66
+37-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:129:17-68
+37-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:129:25-66
 38
 39            <category android:name="android.intent.category.BROWSABLE" />
-39-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:134:17-77
-39-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:134:27-75
+39-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:17-77
+39-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:27-75
 40
 41            <data android:scheme="https" />
-41-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:135:17-138:19
-41-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:135:23-45
+41-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:17-135:19
+41-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:23-45
 42        </intent>
 43    </queries>
 44
 45    <application
-45-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:35:5-181:19
+45-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:35:5-178:19
 46        android:name="app.vercel.test_pwa_ivory_ten.twa.Application"
 46-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:36:9-35
 47        android:allowBackup="true"
@@ -89,7 +89,7 @@
 62-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:56:13-49
 63
 64        <activity
-64-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:64:9-142:20
+64-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:64:9-139:20
 65            android:name="app.vercel.test_pwa_ivory_ten.twa.LauncherActivity"
 65-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:64:19-50
 66            android:alwaysRetainTaskState="true"
@@ -177,108 +177,102 @@
 107                android:value="@string/fallbackType" />
 107-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:110:17-53
 108            <meta-data
-108-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:115:13-116:45
-109                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
-109-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:115:24-86
-110                android:value="immersive" />
-110-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:116:17-42
-111            <meta-data
-111-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:119:13-120:54
-112                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
-112-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:119:24-92
-113                android:value="@string/orientation" />
-113-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:120:17-52
+108-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:116:13-117:54
+109                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+109-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:116:24-92
+110                android:value="@string/orientation" />
+110-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:117:17-52
+111
+112            <intent-filter>
+112-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:123:13-126:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:124:17-69
+113-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:124:25-66
 114
-115            <intent-filter>
-115-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:126:13-129:29
-116                <action android:name="android.intent.action.MAIN" />
-116-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:127:17-69
-116-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:127:25-66
-117
-118                <category android:name="android.intent.category.LAUNCHER" />
-118-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:128:17-77
-118-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:128:27-74
-119            </intent-filter>
-120            <intent-filter android:autoVerify="true" >
-120-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:13-139:29
-120-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:28-53
-121                <action android:name="android.intent.action.VIEW" />
-121-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:17-68
-121-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:25-66
+115                <category android:name="android.intent.category.LAUNCHER" />
+115-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:125:17-77
+115-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:125:27-74
+116            </intent-filter>
+117            <intent-filter android:autoVerify="true" >
+117-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:128:13-136:29
+117-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:128:28-53
+118                <action android:name="android.intent.action.VIEW" />
+118-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:129:17-68
+118-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:129:25-66
+119
+120                <category android:name="android.intent.category.DEFAULT" />
+120-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:130:17-76
+120-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:130:27-73
+121                <category android:name="android.intent.category.BROWSABLE" />
+121-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:17-77
+121-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:131:27-75
 122
-123                <category android:name="android.intent.category.DEFAULT" />
-123-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:133:17-76
-123-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:133:27-73
-124                <category android:name="android.intent.category.BROWSABLE" />
-124-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:134:17-77
-124-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:134:27-75
-125
-126                <data
-126-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:135:17-138:19
-127                    android:host="@string/hostName"
-127-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:136:21-52
-128                    android:scheme="https" />
-128-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:135:23-45
-129            </intent-filter>
-130        </activity>
-131        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
-131-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:144:9-90
-131-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:144:19-87
-132        <activity
-132-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:146:9-147:62
-133            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
-133-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:146:19-97
-134            android:configChanges="orientation|screenSize" />
-134-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:147:13-59
-135
-136        <provider
-136-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:149:9-157:20
-137            android:name="androidx.core.content.FileProvider"
-137-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:150:13-62
-138            android:authorities="@string/providerAuthority"
-138-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:151:13-60
-139            android:exported="false"
-139-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:153:13-37
-140            android:grantUriPermissions="true" >
-140-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:152:13-47
-141            <meta-data
-141-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:154:13-156:53
-142                android:name="android.support.FILE_PROVIDER_PATHS"
-142-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:155:17-67
-143                android:resource="@xml/filepaths" />
-143-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:156:17-50
-144        </provider>
-145
-146        <service
-146-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:159:9-174:19
-147            android:name="app.vercel.test_pwa_ivory_ten.twa.DelegationService"
-147-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:160:13-46
-148            android:enabled="@bool/enableNotification"
-148-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:161:13-55
-149            android:exported="@bool/enableNotification" >
-149-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:162:13-56
-150            <meta-data
-150-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:165:17-167:73
-151                android:name="android.support.customtabs.trusted.SMALL_ICON"
-151-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:166:21-81
-152                android:resource="@drawable/ic_notification_icon" />
-152-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:167:21-70
+123                <data
+123-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:17-135:19
+124                    android:host="@string/hostName"
+124-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:133:21-52
+125                    android:scheme="https" />
+125-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:132:23-45
+126            </intent-filter>
+127        </activity>
+128        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+128-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:141:9-90
+128-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:141:19-87
+129        <activity
+129-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:143:9-144:62
+130            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+130-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:143:19-97
+131            android:configChanges="orientation|screenSize" />
+131-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:144:13-59
+132
+133        <provider
+133-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:146:9-154:20
+134            android:name="androidx.core.content.FileProvider"
+134-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:147:13-62
+135            android:authorities="@string/providerAuthority"
+135-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:148:13-60
+136            android:exported="false"
+136-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:150:13-37
+137            android:grantUriPermissions="true" >
+137-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:149:13-47
+138            <meta-data
+138-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:151:13-153:53
+139                android:name="android.support.FILE_PROVIDER_PATHS"
+139-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:152:17-67
+140                android:resource="@xml/filepaths" />
+140-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:153:17-50
+141        </provider>
+142
+143        <service
+143-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:156:9-171:19
+144            android:name="app.vercel.test_pwa_ivory_ten.twa.DelegationService"
+144-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:157:13-46
+145            android:enabled="@bool/enableNotification"
+145-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:158:13-55
+146            android:exported="@bool/enableNotification" >
+146-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:159:13-56
+147            <meta-data
+147-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:162:17-164:73
+148                android:name="android.support.customtabs.trusted.SMALL_ICON"
+148-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:163:21-81
+149                android:resource="@drawable/ic_notification_icon" />
+149-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:164:21-70
+150
+151            <intent-filter>
+151-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:167:13-170:29
+152                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+152-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:168:17-105
+152-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:168:25-103
 153
-154            <intent-filter>
-154-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:170:13-173:29
-155                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
-155-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:171:17-105
-155-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:171:25-103
-156
-157                <category android:name="android.intent.category.DEFAULT" />
-157-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:133:17-76
-157-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:133:27-73
-158            </intent-filter>
-159        </service>
+154                <category android:name="android.intent.category.DEFAULT" />
+154-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:130:17-76
+154-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:130:27-73
+155            </intent-filter>
+156        </service>
+157
+158        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+158-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:174:13-118
+158-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:174:23-115
+159    </application>
 160
-161        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
-161-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:177:13-118
-161-->D:\Documents\react\test-pwa\app\src\main\AndroidManifest.xml:177:23-115
-162    </application>
-163
-164</manifest>
+161</manifest>

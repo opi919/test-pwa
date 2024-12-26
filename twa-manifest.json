@@ -4,7 +4,7 @@
   "name": "MYPWA",
   "launcherName": "MYPWA",
   "display": "standalone",
-  "themeColor": "#171717",
+  "themeColor": "#000000",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",
   "navigationColorDark": "#000000",
@@ -12,6 +12,7 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#F0E7DB",
   "enableNotifications": true,
+  "fallbackType": "none",
   "startUrl": "/",
   "iconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
   "maskableIconUrl": "https://test-pwa-ivory-ten.vercel.app/ru-logo.png",
@@ -20,13 +21,14 @@
     "path": "my-release-key.jks",
     "alias": "my-key-alias"
   },
-  "appVersionName": "3",
-  "appVersionCode": 3,
+  "appVersionName": "4",
+  "appVersionCode": 4,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://test-pwa-ivory-ten.vercel.app/manifest.webmanifest",
-  "fallbackType": "customtabs",
-  "features": {},
+  "features": {
+    "enableUrlBarHiding": true
+  },
   "alphaDependencies": {
     "enabled": false
   },
@@ -39,5 +41,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "3"
+  "appVersion": "4"
 }
